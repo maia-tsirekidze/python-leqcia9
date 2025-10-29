@@ -8,19 +8,19 @@
 # (() → opened more than closed.
 # ())( → wrong order of closing.
 # მინიშნება: გამოიყენე ფუნქცია და ერთ ერთი განვლილი data structure 
-# def is_balanced(s):
-#     stack = []
-#     for ch in s:
-#         if ch == '(':
-#             stack.append(ch)
-#         else:
-#             if not stack:
-#                 return False
-#             stack.pop()
-#     return not stack
+def is_balanced(s):
+    stack = []
+    for ch in s:
+        if ch == '(':
+            stack.append(ch)
+        else:
+            if not stack:
+                return False
+            stack.pop()
+    return not stack
 
-# s = input("enter string: ")
-# print("YES" if is_balanced(s) else "NO")
+s = input("enter string: ")
+print("YES" if is_balanced(s) else "NO")
 # გიოს ინგლისურის საკონტროლოზე საშლელის წაღება
 #  დაავიწყდა=( არადა ციალა მასწავლებელი მართლწერის ყველა 
 # შეცდომაზე აკლებს ქულას. ამის თავიდან ასარიდებლად გიომ მაგარი 
@@ -40,3 +40,4 @@ def usashlelo(str):
     return "".join(st)
 s=input("enter text: ")
 print(usashlelo(s))
+
